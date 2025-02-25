@@ -1,0 +1,50 @@
+# Metadata for BNPL Knowledge Mining Research Dataset
+
+## Dataset Overview
+This dataset was collected and used for the research manuscript titled "Satisfaction Factor of 'Buy Now, Pay Later' in Indonesia: A Knowledge Mining Approach with Indonesian User Reviews" currently under submission to CommIT journal. The dataset is provided to facilitate reproducibility and verification of the analyses presented in the manuscript.
+
+---
+
+## Dataset 1: Original Cleaned Data
+
+### File Description
+- **File Name**: BNPL--Original-Dataset.csv
+- **Format**: CSV
+- **Size**: 1.96 MB
+- **Encoding**: UTF-8
+
+### Dataset Structure
+The dataset contains 4,488 rows and 5 columns. Below is a description of the columns:
+
+| Column Name       | Data Type   | Description                                                                 |
+|-------------------|-------------|-----------------------------------------------------------------------------|
+| content           | obj         | Cleaned raw review from user                                                |
+| score             | int         | The rating star of the review                                               |
+| at                | datetime    | Datetime of the review (YYYY-MM-DD HH:MM:SS)                                |
+| token             | obj         | Tokenized review                                                            |
+| lemmatized        | obj         | Lemmatized review                                                           |
+
+### Data Sources
+The data was collected from Google Play Store review of several BNPL platforms.
+
+---
+
+## Dataset 2: Labeled Data
+
+### File Description
+- **File Name**: BNPL--Labeled-Dataset.csv
+- **Format**: CSV
+- **Size**: 886 KB
+- **Encoding**: UTF-8
+
+### Dataset Structure
+The dataset contains 4,488 rows and 3 columns. Below is a description of the columns:
+
+| Column Name       | Data Type   | Description                                                                 |
+|-------------------|-------------|-----------------------------------------------------------------------------|
+| content           | obj         | Cleaned raw review from user                                                |
+| factor_label      | obj         | Factor label of the review                                                  |
+| score             | int         | The rating star of the review                                               |
+
+### Data Sources
+The data was collected from Google Play Store review of several BNPL platforms and labeled by topic modeling result.
