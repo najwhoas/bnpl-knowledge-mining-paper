@@ -5,16 +5,14 @@ This dataset was collected and used for the research manuscript titled "Satisfac
 
 ---
 
-## Dataset 1: Original Cleaned Data
-
-### File Description
-- **File Name**: BNPL--Original-Dataset.csv
+## File Description
+- **File Name**: bnpl-dataset.csv
 - **Format**: CSV
-- **Size**: 1.96 MB
+- **Size**: 2.16 MB
 - **Encoding**: UTF-8
 
-### Dataset Structure
-The dataset contains 4,488 rows and 5 columns. Below is a description of the columns:
+## Dataset Structure
+The dataset contains 4,488 rows and 7 columns. Below is a description of the columns:
 
 | Column Name       | Data Type   | Description                                                                 |
 |-------------------|-------------|-----------------------------------------------------------------------------|
@@ -23,28 +21,8 @@ The dataset contains 4,488 rows and 5 columns. Below is a description of the col
 | at                | datetime    | Datetime of the review (YYYY-MM-DD HH:MM:SS)                                |
 | token             | obj         | Tokenized review                                                            |
 | lemmatized        | obj         | Lemmatized review                                                           |
-
-### Data Sources
-The data was collected from Google Play Store review of several BNPL platforms.
-
----
-
-## Dataset 2: Labeled Data
-
-### File Description
-- **File Name**: BNPL--Labeled-Dataset.csv
-- **Format**: CSV
-- **Size**: 886 KB
-- **Encoding**: UTF-8
-
-### Dataset Structure
-The dataset contains 4,488 rows and 3 columns. Below is a description of the columns:
-
-| Column Name       | Data Type   | Description                                                                 |
-|-------------------|-------------|-----------------------------------------------------------------------------|
-| content           | obj         | Cleaned raw review from user                                                |
+| topic             | obj         | Topic number resulted by topic modeling                                     |
 | factor_label      | obj         | Factor label of the review                                                  |
-| score             | int         | The rating star of the review                                               |
 
-### Data Sources
-The data was collected from Google Play Store review of several BNPL platforms and labeled by topic modeling result.
+## Data Sources
+The data was collected from Google Play Store review of several platforms that offer BNPL, involving multi-finance companies such as Home Credit, Kredivo, and Akulaku; digital banks such as Allobank and MyBCA; e-wallets such as OVO and GoPay; and e-commerce, namely SPayLater.
